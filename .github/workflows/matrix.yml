@@ -5,10 +5,10 @@ jobs:
   node-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Install before log node version
+      - name: Log node version
         run: node -v
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
-      - name: Install after log node version
+          node-version: 6
+      - name: Log node version
         run: node -v
