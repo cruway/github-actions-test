@@ -11,4 +11,4 @@ jobs:
         with:
           node-version: 16
       - name: Install after log node version
-          run: node -v
+        run: node -v
