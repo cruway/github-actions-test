@@ -52,11 +52,11 @@ jobs:
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
       - name: java install
-        run: curl -o "/tmp/openjdk-12_linux-x64_bin.tar.gz" "https://download.java.net/java/GA/jdk12/33/GPL/openjdk-12_linux-x64_bin.tar.gz"
+        run: curl -o "/tmp/jdk-17_linux-x64_bin.tar.gz" "https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz"
       - name: java set
         uses: actions/setup-java@v2
         with:
           distribution: 'jdkfile'
-          jdkFile: '/tmp/openjdk-12_linux-x64_bin.tar.gz'
-          java-version: '12'
+          jdkFile: '/tmp/jdk-17_linux-x64_bin.tar.gz'
+          java-version: '17'
           architecture: x64
