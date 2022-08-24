@@ -56,4 +56,3 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-          architecture: x64
